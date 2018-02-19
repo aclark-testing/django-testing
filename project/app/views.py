@@ -5,3 +5,4 @@ from django.shortcuts import render
 def customer_details(request):
     """
     """
+    return render(request, 'customer_details.html', {})
