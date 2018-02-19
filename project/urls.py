@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 from .app import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^customer/details/', views.customer_details, name='customer-details')
+    url(r'^customer/details/', views.customer_details, name='customer-details'),
+    url(r'^login/$', auth_views.login, name='login'),
+    url(r'^logout/$', auth_views.logout, name='logout'),
 ]
