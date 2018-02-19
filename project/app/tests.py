@@ -3,6 +3,7 @@ from .models import Animal
 
 # Create your tests here.
 
+
 class AnimalTestCase(TestCase):
     def setUp(self):
         Animal.objects.create(name="lion", sound="roar")
