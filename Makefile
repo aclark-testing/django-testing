@@ -144,7 +144,7 @@ migrate: django-migrate  # Alias
 migrations: django-migrations  # Alias
 static: django-static  # Alias
 su: django-su  # Alias
-test: django-test  # Alias
+# test: django-test  # Alias
 
 # Elastic Beanstalk
 eb-init: 
