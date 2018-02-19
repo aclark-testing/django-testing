@@ -5,5 +5,7 @@ from django.shortcuts import render
 def customer_details(request):
     """
     """
-    context = {}
+    context = {
+        'customers': 5,
+    }
     return render(request, 'customer_details.html', context)
