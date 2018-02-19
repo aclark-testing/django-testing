@@ -390,6 +390,5 @@ pack: webpack  # Alias
 
 # Django testing
 test:
-	$(MAKE) test
-	$(MAKE) bin/coverage run --source='project' manage.py test
+	$(MAKE) bin/coverage run --source='.' manage.py test
 	$(MAKE) bin/coverage report
