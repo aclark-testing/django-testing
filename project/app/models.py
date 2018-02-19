@@ -10,4 +10,4 @@ class Animal(models.Model):
     sound = models.CharField(max_length=8, default='roar')
 
     def speak(self):
-        print("The %s says %s." % (self.name, self.sound))
+        return 'The %s says "%s"' % (self.name, self.sound)
